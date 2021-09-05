@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>바닐라JS 챌린지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/e9486fd309.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- LOGIN FORM -->
+    <form class="loginForm box hidden">
+      <h1>LOGIN</h1>
+      <div>
+        <label for="userName" class="hidden">사용자 이름</label>
+        <input type="text" name="userName" />
+        <label for="login" class="hidden">로그인 버튼</label>
+        <input type="submit" value="Log in" name="login" class="btn" />
+      </div>
+    </form>
+    <!-- // LOGIN FORM -->
+    <!-- MAIN CONTENTS -->
+    <main class="hidden">
+      <h1 id="welcome"></h1>
+      <div id="clock" class="box"></div>
+      <div id="weather" class="box"></div>
+      <div class="todoListWarp box">
+        <p>TO DO LIST</p>
+        <form id="addList">
+          <label for="todoListText" class="hidden"></label>
+          <input type="text" name="todoListText" />
+          <button type="submit" class="addListBtn">
+            <i class="fas fa-check"></i>
+          </button>
+        </form>
+        <ul id="todoList">
+          <li></li>
+        </ul>
+      </div>
+    </main>
+    <!-- // MAIN CONTENTS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

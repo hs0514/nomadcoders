@@ -1,0 +1,219 @@
+/* RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+main,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+textarea,
+select,
+button,
+label {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  word-break: keep-all;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* FONT */
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 공통 */
+.hidden {
+  display: none;
+}
+
+.box {
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 5px 5px 14px #d9d9d9, -5px -5px 14px #ffffff;
+}
+
+.btn {
+  border-radius: 11px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 7px 7px 15px #d9d9d9, -7px -7px 15px #ffffff;
+}
+
+/* LOGIN FORM */
+.loginForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  width: 350px;
+  height: 140px;
+  border-radius: 25px;
+  transform: translate(-50%, -50%);
+}
+.loginForm h1 {
+  position: relative;
+  top: -25px;
+  text-align: center;
+  color: #000;
+  font-style: italic;
+}
+
+.loginForm > div {
+  text-align: center;
+}
+
+.loginForm input[type="text"] {
+  margin-right: 10px;
+  height: 50px;
+  border: 1px solid #c3c3c3;
+}
+
+.loginForm input[type="submit"] {
+  width: 74px;
+  height: 50px;
+}
+
+/* MAIN CONTENTS*/
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px 0;
+  transform: translate(-50%, -50%);
+}
+
+main div {
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* MAIN TITLE */
+main #welcome {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* TO DO LIST */
+
+.todoListWarp p {
+  position: relative;
+  top: -24px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.todoListWarp input[type="text"] {
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.addListBtn {
+  background: #fff;
+  color: rgb(0, 168, 0);
+  cursor: pointer;
+}
+
+.todoListWarp ul li {
+  margin-bottom: 10px;
+}
+
+.todoListWarp ul li span {
+  display: inline-block;
+  width: 186px;
+  border-bottom: 1px solid #c3c3c3;
+  text-align: left;
+}
+
+.delListBtn {
+  padding-left: 2px;
+  background: #fff;
+  font-weight: 800;
+  font-size: 16px;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}
